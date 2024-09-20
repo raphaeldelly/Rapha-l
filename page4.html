@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+
+    <h1>Procédure de convention de stage</h1>
+
+    <h2> Recherche de stage</h2>
+
+
+    <table width="50%" border="2">
+
+            <tr>    <th colspan="3" style="background-color: blue; width: 200"> Période de stage du 27 Mai au 5 juillet 2023</th>       </tr>
+            <tr>    <td colspan="2" width="150"><img src="img1.png"></td><td>Contactez une entreprise</td>      </tr>
+            <tr>    <td colspan="2" width="150" >remplir la feuille d'engagement (à télécharger sur l'ENT)</td>     </tr>
+                
+            <tr>    <td rowspan="3"width="150" height="150"> <img src="img2.png"> </td><td>Signature Responsable Entreprise</td>    </tr>
+            <tr>    <td width="200"> Signature du tuteur </td>      </tr>
+            <tr>    <td width="200"> Délivrance convention de stage</td>    </tr>
+                    
+                               
+        </table>
+        
+        <h2>Formulaire Simple</h2>
+        <form action="/submit" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+    
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+    
+            <label for="dob">Date de naissance :</label>
+            <input type="date" id="dob" name="dob" required>
+    
+            <label for="adresse">Adresse postale :</label>
+            <textarea id="adresse" name="adresse" rows="4" required></textarea>
+    
+            <label for="classe">Classe :</label>
+            <select id="classe" name="classe" required>
+                <option value="">Choisir...</option>
+                <option value="BTS1">BTS 1</option>
+                <option value="BTS2">BTS 2</option>
+                <option value="L3">L3</option>
+            </select>
+    
+            <button type="submit" class="validate">Valider</button>
+            <button type="button" class="cancel" onclick="window.history.back();">Annuler</button>
+        </form>                
+    
+</body>
+</html>
